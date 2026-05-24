@@ -16,13 +16,13 @@ class SourceChunk(BaseModel):
 
 class EvaluateScore(BaseModel):
     faithfulness: Optional[float] = None
-    answerRelevancy: Optional[float] = None
-    contextPrecision: Optional[float] = None
-    contextRecall: Optional[float] = None
+    answer_relevancy: Optional[float] = None
+    context_precision: Optional[float] = None
+    context_recall: Optional[float] = None
     correctness: Optional[float] = None
     groundedness: Optional[float] = None
     completeness: Optional[float] = None
-    hallucinationRisk: Optional[float] = None
+    hallucination_risk: Optional[float] = None
 
 class EvaluateResponse(BaseModel):
     question: str

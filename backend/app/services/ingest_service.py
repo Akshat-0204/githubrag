@@ -174,6 +174,7 @@ def ingestRepo(repoUrl: str, branch : str = "main") -> dict :
             "namespace" : namespace,
             "filesProcessed" : len(docs),
             "chunksIndexed" : len(chunks),
+            "chunks" : chunks
         }
 
     finally:
